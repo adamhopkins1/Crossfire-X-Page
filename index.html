@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northlight Showcase</title>
+    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap'); 
+    
+    
+    /* Core Styles */
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+body{
+    margin:0;
+    font-family: 'Fjalla One', sans-serif;
+    background:#333;
+    color:#fff;
+    font-size:1.1em;
+    line-height:3;
+    text-align:center;
+}
+
+
+img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+h1,
+h2,
+h3{
+    margin:0;
+    padding:1em 0;
+}
+
+p{
+    margin:0;
+    padding:1em 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#333;
+    color:#fff;
+    text-decoration:none;
+    padding:1em 2em;
+    border:1px solid #666;
+    margin:0.5em 0;
+}
+
+.btn:hover{
+    background:#eaeaeaea;
+    color:#333;
+}
+
+/* Header Showcase */
+#showcase{
+    min-height:450px;
+    color:#fff;
+    text-align:center;
+}
+
+#showcase .bg-image{
+    position:absolute;
+    background:#333;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    height:450px;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#showcase h1{
+    padding-top:100px;
+    padding-bottom:0;
+}
+
+#showcase .content-wrap,
+#section-a,.content-wrap{
+    padding:0 1.5em;
+}
+
+/* Section A */
+
+#section-a{
+    background:#eaeaea;
+    color:#333;
+    padding-bottom:2em;
+}
+
+/* Section B */
+#section-b{
+    padding:2em 1em 1em;
+}
+
+#section-b ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#section-b li{
+    margin-bottom:1em;
+    background:#fff;
+    color:#333
+}
+
+.card-content{
+    padding:1.5em;
+}
+
+/* Section C */
+
+#section-c{
+    background:#fff;
+    color:#333;
+    padding:2em;
+}
+
+/* Section-D / Boxes */
+#section-d .box{
+    padding:2em;
+    color:#fff;
+}
+
+#section-d .box:first-child{
+    background:#2690d4;
+}
+
+/* Footer */
+#main-footer{
+    padding:2em;
+    background:#000;
+    color:#fff;
+    text-align:center;
+}
+
+#main-footer a {
+    color:#2690d4;
+}
+
+/* Media Queries */
+
+@media (min-width:700px){
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr repeat;
+    }
+
+    #section-a .content-text{
+        columns:2;
+        column-gap:2em;
+    }
+
+    #section-a .content-text p{
+        padding-top:0;
+    }
+
+    .content-wrap
+        #section-b ul{
+            grid-column:2/4;
+        }
+    
+    
+        .box,
+        #main-footer div{
+        grid-column:span,2;
+    }
+
+    #section-b ul{
+        display:flex;
+        justify-content:space-around;
+    }
+
+    #section-b li{
+        width:31%;
+    }
+}
+</style>
+</head>
+
+<body>
+    <!--Header Showcase  -->
+    <video id="background-video" autoplay loop muted poster="C:\Users\Adam5\Desktop\Live Server Page 4\Videos\CrossfireX - Official Campaign Reveal Trailer (1).mp4">
+        <source src="https://www.youtube.com/embed/qrNFGH8c4yc?controls=0" type="video/mp4">
+      </video>
+    <header id="showcase" class="grid">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+               <!-- <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                <source src="https://assets.codepen.io/6093409/river.mp4" type="video/mp4">
+              </video> -->
+            <h1>Welcome to Remedy/Smilegate's Crossfire X</h1>
+            <p>A legendary PC franchise comes to Xbox in a fast-paced first person shooter offering a variety of exhilarating multiplayer experiences and a cinematic campaign that
+             explores the global conflict between the world’s two most formidable private military factions.</p>
+        <a href="#section-b" class="btn">Features</a>
+            </div>
+    </header>
+
+    <!-- Main Area -->
+    <main id="main">
+        <!-- Section A -->
+        <section id="section-a" class="grid">
+            <div class="content-wrap">
+            <h2 class="content-title">Gameplay & Features</h2>
+            <div class="content-text">
+                <p>Drop in and join a squad of Global Risk or Black List mercenaries across a variety of classic and innovative multiplayer modes
+                accessible to players of all skill levels and interests.Experience multiple thrilling ways to play Crossfire through various
+                game modes and firing styles.</p>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Section B -->
+        <section id="section-b" class="grid">
+            <ul>
+                <li>
+                    <div class="card">
+                    <img src="https://compass-ssl.xbox.com/assets/9c/34/9c34f79c-8cfe-4cc8-8680-f2c5096a7b46.jpg?n=CrossfireX_Feature-Image-Priority-Full-Width-0_01_1248x702.jpg" alt="">
+                    <div class="card-content">
+                        <h3 class="card-title">Who do you fight for?</h3>
+                        <p>A sprawling global conflict rages between the Global Risk and Black List mercenary factions in an 
+                            immersive and cinematic single player experience that introduces players to the world of Crossfire through a series of action-packed stories told from both sides of the conflict.
+                        </p>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://compass-ssl.xbox.com/assets/b0/ec/b0ecf489-ab86-48a6-a174-263818d242a0.jpg?n=CrossfireX_Feature-Image-Priority-Full-Width-0_1248x702_02.jpg" alt="">
+                        <div class="card-content">
+                            <h3 class="card-title">Unravel The Story</h3>
+                            <p>Explore the conflict between Black List and Global Risk 
+                                factions in the thrilling campaign developed in close collaboration
+                                with Remedy Entertainment.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <img src="https://s.yimg.com/uu/api/res/1.2/x7RW5ZnIofYUuYoMd2e4TA--~B/Zmk9ZmlsbDtoPTQyMjt3PTY3NTthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2020-11/c68640f0-2ab0-11eb-bff7-a1596ef840c7.cf.jpg" alt="">
+                        <div class="card-content">
+                        <h3 class="card-title">Hunt or Be Hunted</h3>
+                        <p>Hide in the shadows with advanced camouflage technology and stalk
+                          your prey or join the mercenaries to fight against teh invisible foe in this asymmetrical team versus team
+                          mode.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- Section C -->
+        <section id="section-c" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Optimized for Xbox Series X|S</h2>
+                <p>Games built using the Xbox Series X|S development kit are designed to take advantage of the unique capabilities of the Xbox Series X|S. 
+                    They will showcase unparalleled load-times, visuals, responsiveness, and framerates up to 120FPS.</p>
+            </div>
+        </section>
+
+        <!-- Section D -->
+        <section id="section-d" class="grid">
+            <div class="box">
+                <h2 class="content-title">About Us</h2>
+                <p>Known for their signature approach to storytelling,<a href="https://www.remedygames.com/contact/"> Remedy Entertainment</a> has developed the campaign in close collaboration
+                 and partnership with <a href="https://www.smilegate.com/en/company/contact.asp"> Smilegate Entertainment.</a></p>
+            </div>
+            <div class="box">
+                <h2 class="content-title">About Our Companies</h2>
+                <p>Remedy Entertainment has specialised in making cinematic single-player action games featuring a strong central character. They create a game engine for their titles, most notably Northlight for Quantum Break. The studio underwent rapid expansion during the 2010s. It became a public company in 2017,
+                  and moved into a larger office in Espoo in 2018.</p>
+                
+                <p>Smilegate is a South Korean video game developer and publisher, which develops, publishes and services mobile and PC online games.
+                   It has five core business sectors: game development, publishing, platform, investment and social contribution. Established in Korea in 2002, it is the creator of CrossFire, an FPS game with over six million concurrent players across the globe,
+                    and many more distinguished titles.</p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer  -->
+    <footer id="main-footer" class="grid">
+        <div><p>&copy;Xbox Game Studios</p></div>
+        <div>A Dummy Project By <a href="https://github.com/adamhopkins1" target="_blank"> AA471</a></div>
+    </footer>
+</body>
+</html>
